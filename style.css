@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+  --darkblue-200: hsl(216, 7%, 14%);
+  --blue: hsl(209, 100%, 29%);
+  --black: hsl(0, 0%, 18%);
+  --black-100: hsl(0, 0%, 36%);
+  --white: hsl(0, 0%, 96%);
+  --white-200: hsl(0, 0%, 75%);
+  --red: hsl(0, 100%, 54%);
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: sans-serif;
+  --wth: 30rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: white;
+  font-family: var(--ff-primary);
+  font-size: 0.875rem;
+  background-image: url(images/pexels-cottonbro-7520359.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.advice-elements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+  background-color: var(--black-100);
+  min-height: 26rem;
+  width: var(--wth);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: relative;
+}
+
+.advice-wrapper {
+  background-color: var(--darkblue-200);
+  min-height: 15rem;
+  min-width: 80%;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: var(--white-200);
+  
+}
+
+.get-advice {
+    font-family: var(--ff-secondary);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-bottom: 0.1rem solid var(--white-200);
+    color: var(--white-200);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.get-advice-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ padding: 0.4rem;
+
+ border: none;
+  background-color: var(--blue);
+  color: var(--white-200);
+  cursor: pointer;
+  transition:all 0.3s;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  -ms-transition:all 0.3s;
+  -o-transition:all 0.3s;
+      border-radius: 1rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: absolute;
+    bottom: -1rem;
+  &:hover {
+    background-color: var(--black);
+  }
+
+  &:active {
+    background-color: var(--blue);
+  }
+}
+
+.material-symbols-outlined {
+  font-size: 2.2rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.advice {
+
+  font-size: 2.25rem;
+    line-height: 2.5rem;
+display: flex;
+flex-direction: column;
+}
+
+.err {
+line-height: 1.2rem;
+  font-size: 0.875rem;
+  color: rgb(172, 172, 172);
+}
+
+
+@media screen and (max-width:700px) {
+
+  body {
+
+    background-color: yellow;
+  }
+
+  .advice-elements-container {
+  min-height: 26.5rem;
+  width: var(--wth);
+ margin: 3rem;
+
+  }
+
+.advice-wrapper{
+  font-size: 1.5rem;
+  min-width: 6rem;
+}
+
+.get-advice-btn {
+  &:hover {
+    background-color: var(--black);
+  }
+
+  &:active {
+    background-color: var(--blue);
+  }
+
+}
+
+
+}
+
+
